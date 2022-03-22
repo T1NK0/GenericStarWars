@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace GenericStarWars.Models
 {
-    internal class Sith : IForceUser
+    public class Sith : IForceUser
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
         public string Title { get; set; }
+        public int Killstreak { get; set; }
+        public override string ToString()
+        {
+            return $"Id:{Id}, Name: {Name}, Age: {Age}, Title: {Title}, Killstreak: {Killstreak}";
+        }
     }
 }

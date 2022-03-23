@@ -1,19 +1,16 @@
 ﻿using GenericStarWars.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GenericStarWars.Repository
 {
-    public class Repo<T> : IRepo<T> where T : class, IForceUser
+    public class Repository<T> : IRepository<T> where T : class, IForceUser
     {
         private readonly DbContext _dbContext;
         private readonly DbSet<T> _dbSet;
 
-        public Repo(DbContext dbContext)
+        public Repository(DbContext dbContext)
         {
             _dbContext = dbContext;
             _dbSet = dbContext.Set<T>();

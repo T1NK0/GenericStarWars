@@ -10,8 +10,8 @@ namespace GenericStarWars.Data
 {
     public class StarWarsDbContext : DbContext
     {
-        public DbSet<Jedi> Jedis { get; set; }
-        public DbSet<Sith> Siths { get; set; }
+        public DbSet<JediMaster> Jedis { get; set; }
+        public DbSet<SithMaster> Siths { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

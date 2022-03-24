@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GenericStarWars.Models
+﻿namespace GenericStarWars.Models
 {
-    public class JediMaster : ForceUserBase
+    public class JediMaster : Jedi
     {
         public override string ToString()
         {

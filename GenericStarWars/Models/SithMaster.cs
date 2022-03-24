@@ -1,6 +1,6 @@
 ﻿namespace GenericStarWars.Models
 {
-    public class SithMaster : ForceUserBase
+    public class SithMaster : Sith
     {
         public override string ToString()
         {
